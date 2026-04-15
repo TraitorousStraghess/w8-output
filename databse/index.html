@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet" href="./sanitize.css">
+    <link rel="stylesheet" href="./style.css"> 
+    <title>ログインフォーム</title>
+</head>
+<body>
+    
+    <div class="account">
+        <h1 class="account-headline">Sign in to your account</h1>
+
+        <form class="form" action=""> <!-- フォーム要素。action属性に送信先URLを指定。ユーザーの入力データをサーバーに送る --> 
+            <table class="form-table"> <!-- 表を作る要素。フォームの項目を整列させるためにテーブルを使用 -->
+                <tr>
+                    <th>
+                        <label for="name">
+                            Email
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="email" id="email"> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">
+                            password
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="password" id="password"> 
+                    </td>
+                </tr>
+            </table>
+
+            <div class="form-button">
+                <button class="button button-submission" type="submit">Sign in</button> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
